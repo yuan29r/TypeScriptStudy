@@ -10,7 +10,11 @@
     "type": "git",
     "url": "git+https://github.com/yuan29r/TypeScriptStudy.git"
   },
-  "keywords": ["typescript","test","example"],
+  "keywords": [
+    "typescript",
+    "test",
+    "example"
+  ],
   "author": "test",
   "license": "MIT",
   "bugs": {
@@ -18,6 +22,8 @@
   },
   "homepage": "https://github.com/yuan29r/TypeScriptStudy#readme",
   "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-tslint": "^8.1.4",
     "gulp-typescript": "^6.0.0-alpha.1"
   },
   "dependencies": {
