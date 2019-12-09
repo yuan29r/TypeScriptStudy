@@ -11,7 +11,8 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\TSedit\\interfacetest.ts",           
+            "program": "${workspaceFolder}\\TSedit\\Mix01.ts",  
+            "preLaunchTask": "build",         
             "outFiles": [
                 "${workspaceFolder}/TSoutput/**/*.js"
             ]

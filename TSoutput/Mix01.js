@@ -2,6 +2,7 @@ var Geometry;
 (function (Geometry) {
     var Vector = /** @class */ (function () {
         function Vector(x, y) {
+            this.newProperty = 1 / this.length();
             this._x = x;
             this._y = y;
         }
@@ -12,7 +13,7 @@ var Geometry;
             return Math.sqrt(this._x * this._x + this._y * this._y);
         };
         Vector.prototype.normalize = function () {
-            var len = 1 / this.length();
+            var len = this.newProperty;
             this._x *= len;
             this._y *= len;
         };

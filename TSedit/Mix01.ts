@@ -8,6 +8,8 @@ module Geometry{
     export class Vector implements IVector{
         private _x:number;
         private _y:number;
+        private readonly newProperty = 1 / this.length();
+
         constructor(x:number,y:number){
             this._x=x;
             this._y=y;
@@ -19,11 +21,11 @@ module Geometry{
             return Math.sqrt(this._x*this._x+this._y*this._y);
         }
         normalize(){
-            var len=1/this.length();
+            var len=this.newProperty;
             this._x*=len;
             this._y*=len;
         }
-    }     
+    }         
 }
 
 var vector:Geometry.IVector=new Geometry.Vector(2,3);
