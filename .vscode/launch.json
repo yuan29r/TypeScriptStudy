@@ -12,7 +12,7 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}\\TSedit\\Mix01.ts",  
-            "preLaunchTask": "build",         
+            //"preLaunchTask": "build",         
             "outFiles": [
                 "${workspaceFolder}/TSoutput/**/*.js"
             ]
