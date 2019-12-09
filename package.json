@@ -1,0 +1,27 @@
+{
+  "name": "tsstudy",
+  "version": "1.0.0",
+  "description": "我的測試",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuan29r/TypeScriptStudy.git"
+  },
+  "keywords": ["typescript","test","example"],
+  "author": "test",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yuan29r/TypeScriptStudy/issues"
+  },
+  "homepage": "https://github.com/yuan29r/TypeScriptStudy#readme",
+  "devDependencies": {
+    "gulp-typescript": "^6.0.0-alpha.1"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "jshint": "^2.10.3"
+  }
+}
