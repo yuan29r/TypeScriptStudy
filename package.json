@@ -21,13 +21,11 @@
     "url": "https://github.com/yuan29r/TypeScriptStudy/issues"
   },
   "homepage": "https://github.com/yuan29r/TypeScriptStudy#readme",
-  "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-tslint": "^8.1.4",
-    "gulp-typescript": "^6.0.0-alpha.1"
-  },
+  "devDependencies": {},
   "dependencies": {
+    "@types/jquery": "^3.3.31",
+    "@types/jquery.blockui": "0.0.28",
     "jquery": "^3.4.1",
-    "jshint": "^2.10.3"
+    "jquery-blockui": "^2.7.0"
   }
 }

@@ -1,8 +1,10 @@
 {
     "compilerOptions": {      
       "sourceMap": true,
-      "target": "es5",    
-      "outDir": "./TSoutput"
+      "target": "es6",    
+      "outDir": "./TSoutput",
+      "types":["jquery"]
     },     
-    "compileOnSave": true
+    "compileOnSave": true,
+   
   }

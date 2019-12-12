@@ -13,7 +13,7 @@ function test(value) {
         default:
             res = "不再指定的型別";
     }
-    console.log("\u578B\u5225\u9A57\u8B49\u7D50\u679C\uFF1A" + res);
+    console.log(`型別驗證結果：${res}`);
     return res;
 }
 //# sourceMappingURL=Overload.js.map

@@ -2,20 +2,19 @@ var obj = { a: 1, b: "tr", c: true };
 for (var key in obj) {
     console.log(key + "=" + obj[key]);
 }
-var character = /** @class */ (function () {
-    function character(firstname, lastname) {
+class character {
+    constructor(firstname, lastname) {
         this.fullname = firstname + lastname;
     }
-    character.prototype.greet = function (name) {
+    greet(name) {
         if (name) {
             return "hi!" + name + "問候";
         }
         else {
             return "hi!! my name is " + this.fullname;
         }
-    };
-    return character;
-}());
+    }
+}
 var spark = new character("增", "隨意");
 var msg = spark.greet();
 //alert(msg);
