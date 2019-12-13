@@ -94,14 +94,22 @@ class Greeter {
 var greeter = new Greeter("world");
 
 /******************************************繼承 */
-class Animal {
+/*class Animal {
     name: string;
     constructor(theName: string) { this.name = theName; }
     move(distanceInMeters: number = 0) {
         alert(`${this.name} moved ${distanceInMeters}m.`);
     }
+}*/
+/*注意看我們是如何捨棄了theName，
+僅在建構函式裡使用private name: string參數來建立和初始化name成員。 
+我們把宣告和賦值合併至一處。*/
+class Animal {
+    constructor(private name: string) { }
+    move(distanceInMeters: number) {
+        alert(`${this.name} moved ${distanceInMeters}m.`);
+    }
 }
-
 class Snake extends Animal {
     constructor(name: string) { super(name); }
     move(distanceInMeters = 5) {
