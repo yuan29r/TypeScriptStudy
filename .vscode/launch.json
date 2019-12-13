@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\TSedit\\var-let-const.ts",         
+            "program": "${workspaceFolder}\\TSedit\\newFile.ts",         
             "preLaunchTask": "${defaultBuildTask}",         
             "outFiles": [
                 "${workspaceFolder}/TSoutput/**/*.js"
