@@ -18,4 +18,26 @@ var grid1 = new Grid(1.0); // 1x scale
 var grid2 = new Grid(5.0); // 5x scale
 alert(grid1.calculateDistanceFromOrigin({ x: 10, y: 10 }));
 alert(grid2.calculateDistanceFromOrigin({ x: 10, y: 10 }));
+/** */
+class Greeter2 {
+    greet() {
+        if (this.greeting) {
+            return "Hello, " + this.greeting;
+        }
+        else {
+            return Greeter2.standardGreeting;
+        }
+    }
+}
+Greeter2.standardGreeting = "Hello, there";
+var greeter1;
+greeter1 = new Greeter2();
+alert(greeter1.greet());
+/* typeof Greeter2式取得型別的意思，
+把class Greeter2 給greeterMaker，
+所以greeterMaker就是個class,而且和Greeter2一模一樣的類別意思*/
+var greeterMaker = Greeter2;
+greeterMaker.standardGreeting = "Hey there!";
+var greeter2 = new greeterMaker();
+alert(greeter2.greet());
 //# sourceMappingURL=static.js.map
