@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\TSedit\\newFile.ts",         
+            "program": "${workspaceFolder}\\TSedit\\get-set.ts",         
             "preLaunchTask": "${defaultBuildTask}",         
             "outFiles": [
                 "${workspaceFolder}/TSoutput/**/*.js"
