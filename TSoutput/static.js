@@ -40,4 +40,12 @@ var greeterMaker = Greeter2;
 greeterMaker.standardGreeting = "Hey there!";
 var greeter2 = new greeterMaker();
 alert(greeter2.greet());
+/**把類別當介面使用
+ * 類別定義會建立兩個東西：類別執行個體的型別和一個建構函式。
+ * 所以可以用類別來定義變數清單再給介面使用
+ * 擴充時可以考慮類似用法
+*/
+class Point {
+}
+var point3d = { x: 1, y: 2, z: 3 };
 //# sourceMappingURL=static.js.map
