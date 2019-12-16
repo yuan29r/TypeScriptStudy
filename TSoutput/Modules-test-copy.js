@@ -2,9 +2,8 @@ define("Modules-Validation", ["require", "exports"], function (require, exports)
     "use strict";
     exports.__esModule = true;
 });
-define("Modules-ZipCodeValidator", ["require", "exports"], function (require, exports) {
+define("Modules-ZipCodeValidator-copy", ["require", "exports"], function (require, exports) {
     "use strict";
-    exports.__esModule = true;
     var numberRegexp = /^[0-9]+$/;
     var ZipCodeValidator = /** @class */ (function () {
         function ZipCodeValidator() {
@@ -14,11 +13,10 @@ define("Modules-ZipCodeValidator", ["require", "exports"], function (require, ex
         };
         return ZipCodeValidator;
     }());
-    exports.ZipCodeValidator = ZipCodeValidator;
+    return ZipCodeValidator;
 });
-define("Modules-LettersOnlyValidator", ["require", "exports"], function (require, exports) {
+define("Modules-LettersOnlyValidator-copy", ["require", "exports"], function (require, exports) {
     "use strict";
-    exports.__esModule = true;
     var lettersRegexp = /^[A-Za-z]+$/;
     var LettersOnlyValidator = /** @class */ (function () {
         function LettersOnlyValidator() {
@@ -28,17 +26,17 @@ define("Modules-LettersOnlyValidator", ["require", "exports"], function (require
         };
         return LettersOnlyValidator;
     }());
-    exports.LettersOnlyValidator = LettersOnlyValidator;
+    return LettersOnlyValidator;
 });
-define("Modules-test-copy", ["require", "exports", "Modules-ZipCodeValidator", "Modules-LettersOnlyValidator"], function (require, exports, zip, letters) {
+define("Modules-test-copy", ["require", "exports", "Modules-ZipCodeValidator-copy", "Modules-LettersOnlyValidator-copy"], function (require, exports, zip, letters) {
     "use strict";
     exports.__esModule = true;
     // Some samples to try
     var strings = ['Hello', '98052', '101'];
     // Validators to use
     var validators = {};
-    validators['ZIP code'] = new zip.ZipCodeValidator();
-    validators['Letters only'] = new letters.LettersOnlyValidator();
+    validators['ZIP code'] = new zip();
+    validators['Letters only'] = new letters();
     // Show whether each string passed each validator
     strings.forEach(function (s) {
         for (var name in validators) {
@@ -50,5 +48,5 @@ define("Modules-test-copy", ["require", "exports", "Modules-ZipCodeValidator", "
  * module選擇 commonjs 就用下面
  * ts --module commonjs Test.ts
  * module選擇 requirejs 就用下面 ,下面這個輸出會變成一個檔案
- * tsc --out ./TSoutput/Modules-test.js  --module amd ./TSedit/Modules-test.ts
+ * tsc --out ./TSoutput/Modules-test-copy.js  --module amd ./TSedit/Modules-test-copy.ts
  */ 
