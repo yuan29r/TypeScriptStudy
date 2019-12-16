@@ -26,6 +26,7 @@
     "@types/jquery": "^3.3.31",
     "@types/jquery.blockui": "0.0.28",
     "jquery": "^3.4.1",
-    "jquery-blockui": "^2.7.0"
+    "jquery-blockui": "^2.7.0",
+    "requirejs": "^2.3.6"
   }
 }
