@@ -1,0 +1,1 @@
+{"version":3,"file":"Modules-LettersOnlyValidator-copy.js","sourceRoot":"","sources":["../TSedit/Modules-LettersOnlyValidator-copy.ts"],"names":[],"mappings":";;IAKA,IAAI,aAAa,GAAG,aAAa,CAAC;IAClC,MAAM,oBAAoB;QACtB,YAAY,CAAC,CAAS;YAClB,OAAO,aAAa,CAAC,IAAI,CAAC,CAAC,CAAC,CAAC;QACjC,CAAC;KACJ;IACD,OAAS,oBAAoB,CAAC"}

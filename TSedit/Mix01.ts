@@ -2,7 +2,7 @@ module Geometry{
     export interface IVector{
         toArray(callback:(x:number[])=>void):void;
         length():number;
-        normalize();
+        normalize():void;
     }
 
     export class Vector implements IVector{

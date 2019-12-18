@@ -1,0 +1,1 @@
+{"version":3,"file":"Modules-LettersOnlyValidator.js","sourceRoot":"","sources":["../TSedit/Modules-LettersOnlyValidator.ts"],"names":[],"mappings":";;;IAKA,IAAI,aAAa,GAAG,aAAa,CAAC;IAClC,MAAa,oBAAoB;QAC7B,YAAY,CAAC,CAAS;YAClB,OAAO,aAAa,CAAC,IAAI,CAAC,CAAC,CAAC,CAAC;QACjC,CAAC;KACJ;IAJD,oDAIC"}

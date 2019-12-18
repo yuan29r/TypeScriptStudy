@@ -1,31 +1,3 @@
-/// <reference path="../TSedit/mutifile-validation.ts" />
-var Validation2;
-(function (Validation2) {
-    var lettersRegexp = /^[A-Za-z]+$/;
-    var LettersOnlyValidator = /** @class */ (function () {
-        function LettersOnlyValidator() {
-        }
-        LettersOnlyValidator.prototype.isAcceptable = function (s) {
-            return lettersRegexp.test(s);
-        };
-        return LettersOnlyValidator;
-    }());
-    Validation2.LettersOnlyValidator = LettersOnlyValidator;
-})(Validation2 || (Validation2 = {}));
-/// <reference path="mutifile-validation.ts" />
-var Validation2;
-(function (Validation2) {
-    var numberRegexp = /^[0-9]+$/;
-    var ZipCodeValidator = /** @class */ (function () {
-        function ZipCodeValidator() {
-        }
-        ZipCodeValidator.prototype.isAcceptable = function (s) {
-            return s.length === 5 && numberRegexp.test(s);
-        };
-        return ZipCodeValidator;
-    }());
-    Validation2.ZipCodeValidator = ZipCodeValidator;
-})(Validation2 || (Validation2 = {}));
 /// <reference path="mutifile-validation.ts" />
 /// <reference path="mutifile-LettersOnlyValidator.ts" />
 /// <reference path="mutifile-ZipCodeValidator.ts" />
@@ -37,14 +9,14 @@ var validators = {};
 validators['ZIP code'] = new Validation2.ZipCodeValidator();
 validators['Letters only'] = new Validation2.LettersOnlyValidator();
 // Show whether each string passed each validator
-strings.forEach(function (s) {
+strings.forEach(s => {
     for (var name in validators) {
         console.log('"' + s + '" ' + (validators[name].isAcceptable(s) ? ' matches ' : ' does not match ') + name);
     }
 });
 /**這邊意要注意一下
  * 編譯成一個檔案模式，範例指令：
- * tsc --out mutifile-refallfile.js mutifile-refallfile.ts
+ * tsc --out ./TSoutput/mutifile-refallfile.js mutifile-refallfile.ts
  *
  * 單獨地指定每個檔，範例指令：
  * tsc --out mutifile-refallfile.js mutifile-validation.ts mutifile-LettersOnlyValidator.ts mutifile-ZipCodeValidator.ts mutifile-refallfile.ts
@@ -55,3 +27,4 @@ strings.forEach(function (s) {
  * <script src="mutifile-ZipCodeValidator.js" type="text/javascript" />
  * <script src="mutifile-refallfile.js" type="text/javascript" />
  */ 
+//# sourceMappingURL=mutifile-refallfile.js.map
