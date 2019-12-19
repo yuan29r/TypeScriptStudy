@@ -84,7 +84,7 @@ function find<T>(n: T, s: Findable<T>) {
  }
  find(giraffe, myAnimals);
  */
-/**在泛型裡使用類別型別 */
+/**在泛型裡使用類別型別  T是個class 要使用他在()裡面{new():T;}*/
 function create(c) {
     return new c();
 }
